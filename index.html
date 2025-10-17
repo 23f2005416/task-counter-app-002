@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .counter-container { text-align: center; margin-top: 100px; }
+        .count-display { font-size: 4rem; font-weight: bold; margin: 20px 0; }
+        .btn { margin: 5px; font-size: 1.2rem; }
+    </style>
+</head>
+<body>
+    <div class="counter-container">
+        <h1>Counter Application</h1>
+        <div class="count-display" id="count">0</div>
+        <div>
+            <button class="btn btn-danger btn-lg" onclick="decrement()">-1</button>
+            <button class="btn btn-warning btn-lg" onclick="resetCounter()">Reset</button>
+            <button class="btn btn-success btn-lg" onclick="increment()">+1</button>
+        </div>
+        <div class="mt-4">
+            <button class="btn btn-info" onclick="incrementBy(5)">+5</button>
+            <button class="btn btn-info" onclick="incrementBy(10)">+10</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
